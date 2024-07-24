@@ -7,6 +7,14 @@ namespace Collecitons
         static void Main(string[] args)
         {
             // ArrayList();
+            //List();
+            Dictionary<string,string> dictionary = new Dictionary<string,string>();
+            dictionary.Add("book", "kitap");
+            dictionary.Add("table", "tablo");   
+        }
+
+        private static void List()
+        {
             List<string> cities = new List<string>();
             cities.Add("İstanbul");
             List<Customer> customers = new List<Customer>();
@@ -16,12 +24,19 @@ namespace Collecitons
                 Id = 2,
                 Name = "Veli"
             });
+
             foreach (var customer in customers)
             {
                 Console.WriteLine(customer.Name);
             }
             var count = customers.Count;
+            var customer1 = new Customer { Id = 3, Name = "salih" };
+            customers.Add(customer1);
+            customers.AddRange(new Customer[2]{
+                new Customer { Id = 4, Name="djalks" },
+                new Customer { Id = 5, Name="aişe" }
 
+            });
         }
 
         private static void ArrayList()
