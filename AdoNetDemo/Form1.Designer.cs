@@ -60,7 +60,6 @@
             this.dgwProduct.RowHeadersWidth = 51;
             this.dgwProduct.Size = new System.Drawing.Size(743, 185);
             this.dgwProduct.TabIndex = 0;
-            this.dgwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProduct_CellClick);
             this.dgwProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProduct_CellContentClick);
             // 
             // lblName
@@ -217,7 +216,6 @@
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Form1
             // 

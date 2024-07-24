@@ -60,16 +60,7 @@ namespace AdoNetDemo
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Product product = new Product
-            {
-                Id = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value),
-                Name = tbxNameUpdate.Text,
-                UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text),
-                StockAmount= Convert.ToInt32(tbxStockAmountUpdate.Text),
-            };
-            _productDal.Update(product);
-         
-            MessageBox.Show("Updated!");
+
         }
     }
 }
