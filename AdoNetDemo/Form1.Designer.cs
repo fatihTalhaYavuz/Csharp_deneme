@@ -55,7 +55,7 @@
             this.dgwProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwProduct.Location = new System.Drawing.Point(52, 39);
-            this.dgwProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgwProduct.Margin = new System.Windows.Forms.Padding(4);
             this.dgwProduct.Name = "dgwProduct";
             this.dgwProduct.RowHeadersWidth = 51;
             this.dgwProduct.Size = new System.Drawing.Size(743, 185);
@@ -76,7 +76,7 @@
             // tbxName
             // 
             this.tbxName.Location = new System.Drawing.Point(219, 270);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(4);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(132, 22);
             this.tbxName.TabIndex = 2;
@@ -84,7 +84,7 @@
             // tbxUnitPrice
             // 
             this.tbxUnitPrice.Location = new System.Drawing.Point(219, 302);
-            this.tbxUnitPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxUnitPrice.Margin = new System.Windows.Forms.Padding(4);
             this.tbxUnitPrice.Name = "tbxUnitPrice";
             this.tbxUnitPrice.Size = new System.Drawing.Size(132, 22);
             this.tbxUnitPrice.TabIndex = 3;
@@ -92,7 +92,7 @@
             // tbxStockAmount
             // 
             this.tbxStockAmount.Location = new System.Drawing.Point(219, 334);
-            this.tbxStockAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxStockAmount.Margin = new System.Windows.Forms.Padding(4);
             this.tbxStockAmount.Name = "tbxStockAmount";
             this.tbxStockAmount.Size = new System.Drawing.Size(132, 22);
             this.tbxStockAmount.TabIndex = 4;
@@ -122,9 +122,9 @@
             // 
             this.gbxAdd.Controls.Add(this.btnAdd);
             this.gbxAdd.Location = new System.Drawing.Point(52, 231);
-            this.gbxAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxAdd.Margin = new System.Windows.Forms.Padding(4);
             this.gbxAdd.Name = "gbxAdd";
-            this.gbxAdd.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxAdd.Padding = new System.Windows.Forms.Padding(4);
             this.gbxAdd.Size = new System.Drawing.Size(346, 175);
             this.gbxAdd.TabIndex = 7;
             this.gbxAdd.TabStop = false;
@@ -133,7 +133,7 @@
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(167, 135);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(133, 28);
             this.btnAdd.TabIndex = 0;
@@ -216,6 +216,7 @@
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
             // Form1
             // 

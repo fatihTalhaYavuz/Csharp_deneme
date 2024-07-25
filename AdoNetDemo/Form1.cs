@@ -62,5 +62,10 @@ namespace AdoNetDemo
         {
 
         }
+
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
