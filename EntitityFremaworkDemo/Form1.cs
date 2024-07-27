@@ -59,7 +59,7 @@ namespace EntitityFremaworkDemo
 
             }); 
             LoadProducts();
-            MessageBox.Show("updatedd");
+            MessageBox.Show("updateddd");
         }
 
         private void dgwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
