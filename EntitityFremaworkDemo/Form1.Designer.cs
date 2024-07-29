@@ -46,6 +46,9 @@
             this.gbxAdd = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.tbxSearch = new System.Windows.Forms.TextBox();
+            this.tbxGetById = new System.Windows.Forms.Button();
             this.gbxUpdate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
             this.gbxAdd.SuspendLayout();
@@ -221,7 +224,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(582, 20);
+            this.btnRemove.Location = new System.Drawing.Point(29, 20);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(133, 28);
@@ -230,11 +233,41 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(551, 26);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(50, 16);
+            this.lblSearch.TabIndex = 32;
+            this.lblSearch.Text = "Search";
+            // 
+            // tbxSearch
+            // 
+            this.tbxSearch.Location = new System.Drawing.Point(619, 25);
+            this.tbxSearch.Name = "tbxSearch";
+            this.tbxSearch.Size = new System.Drawing.Size(142, 22);
+            this.tbxSearch.TabIndex = 33;
+            this.tbxSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // tbxGetById
+            // 
+            this.tbxGetById.Location = new System.Drawing.Point(169, 20);
+            this.tbxGetById.Name = "tbxGetById";
+            this.tbxGetById.Size = new System.Drawing.Size(145, 27);
+            this.tbxGetById.TabIndex = 34;
+            this.tbxGetById.Text = "Get By Id";
+            this.tbxGetById.UseVisualStyleBackColor = true;
+            this.tbxGetById.Click += new System.EventHandler(this.tbxGetById_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tbxGetById);
+            this.Controls.Add(this.tbxSearch);
+            this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.lblStockAmountUpdate);
             this.Controls.Add(this.lblUnirPriceUpdate);
@@ -282,6 +315,9 @@
         private System.Windows.Forms.GroupBox gbxAdd;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox tbxSearch;
+        private System.Windows.Forms.Button tbxGetById;
     }
 }
 

@@ -73,5 +73,32 @@ namespace EntitityFremaworkDemo
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            SearchProducts(tbxSearch.Text);
+           
+        }
+        private void SearchProducts(String key)
+        {
+            var result = _productDal.GetAll().Where(p=>p.Name.ToLower().Contains(key.ToLower())).ToList(); //biz arama butonunu önce hepsini küçülttük sonra arattık
+            //bu sayede l yazınca "L ve l" olanların hepsini alıyor.
+            
+            dgwProduct.DataSource = result;
+        }
+        public List<Product> GetByName()
+        {
+            using (ETradeContext context = new ETradeContext())//bellekte çok yer kaplar, app.config içindekki Connecting string içinden bağlantı kuracak.
+                                                               // Using kullanınca garbage kullanmaya gerk kalmadan kullandıktna sonra direkt çöpe atılması zorluyor.
+            {
+                return context.Products.ToList();
+
+            }
+        }
+
+        private void tbxGetById_Click(object sender, EventArgs e)
+        {
+            _productDal.GetById(1);
+        }
     }
 }
