@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 
 namespace Reflection
 {
@@ -27,8 +28,12 @@ namespace Reflection
                 foreach (var parameterInfo in info.GetParameters()) {
                     Console.WriteLine("Parametre: {0}", parameterInfo.Name);
                 }
+                foreach (var attribute in info.GetCustomAttributes())
+                {
+                    Console.WriteLine("Attribute Name: {0}", attribute.GetType().Name);
+                }
             }
-
+            
         }
     }
     public class DortIslem
@@ -52,10 +57,16 @@ namespace Reflection
         {
             return _sayi1 + _sayi2;
         }
+        [MetodName("Çarpma")]
         public int Carp2()
         {
             return _sayi1 * _sayi2;
         }
+
+    }
+    public class MetodNameAttribute:Attribute
+    {
+        public MetodNameAttribute(string name) {
 
     }
 }
