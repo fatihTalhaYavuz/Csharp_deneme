@@ -17,7 +17,7 @@ namespace ConsoleApp2
         }
         public void ShowAlert()
         {
-            Console.WriteLine("Be carefull!");
+            Console.WriteLine("Be carefull okey and go yto hell!");
         }
         public void SendMessage2(string message)
         {
