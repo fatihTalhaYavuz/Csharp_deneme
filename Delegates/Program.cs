@@ -55,4 +55,24 @@
             return x + y;
         }
     }
+    public class Customm
+    {
+        public void SendMessage()
+        {
+            Console.WriteLine("hello");
+        }
+        public void ShowAlert()
+        {
+            Console.WriteLine("Be carefull!");
+        }
+        public void SendMessage2(string message)
+        {
+            Console.WriteLine(message);
+        }
+        public void ShowAlert2(string alert)
+        {
+            Console.WriteLine(alert);
+        }
+
+    }
 }
