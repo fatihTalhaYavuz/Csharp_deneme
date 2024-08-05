@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attributes", "Attributes\At
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection", "Reflection\Reflection.csproj", "{A9D672E0-AED5-4930-A48E-B65821D77AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{3F2EC440-B524-4C8E-90C5-50B01289DB47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{3F2EC440-B524-4C8E-90C5-50B01289DB47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{674A66F9-0E41-474F-AC69-EFCC78C61051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{3F2EC440-B524-4C8E-90C5-50B01289DB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F2EC440-B524-4C8E-90C5-50B01289DB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F2EC440-B524-4C8E-90C5-50B01289DB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674A66F9-0E41-474F-AC69-EFCC78C61051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674A66F9-0E41-474F-AC69-EFCC78C61051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674A66F9-0E41-474F-AC69-EFCC78C61051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674A66F9-0E41-474F-AC69-EFCC78C61051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
